@@ -133,7 +133,9 @@ function Questions()  {
         let total = 0
         let array = document.getElementsByClassName("correctAnswer");
         for (const item of array){
+            // @ts-ignore//
             console.log(item.checked)
+            // @ts-ignore//
             if (item.checked===true) {
                 total = total + 1
             } else {
@@ -357,10 +359,10 @@ function Questions()  {
             <FirstQuestion>
                 22. I _____ a new mobile phone for me today in the afternoon.
                 <Answers>
-                    <label htmlFor="input71"><input type="radio" name="input71"/> buy</label>
-                    <label htmlFor="input71"><input type="radio" name="input71"/> am going to buy</label>
-                    <label htmlFor="input71"><input type="radio" name="input71"/> will buy</label>
-                    <label htmlFor="input71"><input className='correctAnswer' type="radio" name="input71"/> am buying</label>
+                    <label htmlFor="input72"><input type="radio" name="input72"/> buy</label>
+                    <label htmlFor="input72"><input type="radio" name="input72"/> am going to buy</label>
+                    <label htmlFor="input72"><input type="radio" name="input72"/> will buy</label>
+                    <label htmlFor="input72"><input className='correctAnswer' type="radio" name="input72"/> am buying</label>
                 </Answers>
             </FirstQuestion>
             <FirstQuestion>
